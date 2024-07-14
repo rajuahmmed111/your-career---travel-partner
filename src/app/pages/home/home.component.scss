@@ -1,0 +1,72 @@
+.simple-section {
+  background-color: #0a0a0a;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.container h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+.container p {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  opacity: 0.7;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin-top: 70px;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #56585a;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: #0d0d0d;
+
+  .plane-icon {
+    width: 50px;
+    height: 60px;
+    background-color: #841a8e;
+    border-radius: 8px;
+  }
+}
+
+.card h2 {
+  padding-top: 20px;
+  color: white;
+}
+.card p {
+  padding-top: 20px;
+  color: white;
+  opacity: 0.7;
+  text-align: start;
+}
+
+
+// @media query
+@media only screen and (max-width: 599px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1059px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
